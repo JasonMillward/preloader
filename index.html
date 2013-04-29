@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>jCode Lab - Type Ahead Example</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="Jason Millward">
+        <!-- Load all of the CSS -->
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <!-- "IE plays nice with html5" said no one, ever -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <!-- Fancy icon, for fancy browsers. -->
+        <link rel="shortcut icon" href="//lab.jcode.me/favicon.ico">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row preloader">
+                <div class="offset3 span6">
+
+                    <h3>Loading required images...</h3>
+
+                    <div class="progress progress-striped active">
+                        <div class="bar" id="total" style="width: 00%;"></div>
+                    </div>
+
+                    <div class="progress progress-success progress-striped active">
+                        <div class="bar" id="src" style="width: 00%;"></div>
+                    </div>
+
+                    <div class="progress progress-warning progress-striped active">
+                        <div class="bar" id="css" style="width: 00%;"></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row content" style="display:none;">
+                <div class="offset3 span5">
+                    <h3>All images have been loaded. </h3>
+                    <div class="bs-docs-output">
+                        <pre class="prettyprint linenums" id="debug"></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="span1" style="display:none">
+                <!-- Stupidly large image -->
+                <!-- <img src="./images/1.jpg" />  -->
+                <img src="./img/2.jpg" />
+                <img src="./img/3.jpg" />
+                <img src="./img/4.jpg" />
+                <img src="./img/5.jpg" />
+                <img src="./img/6.jpg" />
+                <img src="./img/7.jpg" />
+                <img src="./img/8.jpg" />
+                <img src="./img/9.jpg" />
+            </div>
+        </div>
+
+        <div class="navbar navbar-fixed-bottom">
+            <div class="navbar-inner navbar-jcode">
+                <div class="footerLeft">&copy; jCode 2013
+                    <br/>[LEGAL STUFF HERE I GUESS]</div>
+                <div class="footerRight">Built using <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>
+
+                    <br/>Designed by <a href="http://jcode.me/">Jason Millward</a>
+
+                </div>
+            </div>
+        </div>
+        <!-- Load jquery and bootstrap.js -->
+        <script src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="./js/preloader.js"></script>
+    </body>
+
+</html>
